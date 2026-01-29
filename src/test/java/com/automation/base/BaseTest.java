@@ -47,6 +47,7 @@ public class BaseTest {
         } else if (result.getStatus() == ITestResult.SKIP) {
             logger.warn("Test Skipped: " + result.getName());
             ReportManager.logSkip("Test Skipped");
+            logger.infor("Test Skipped: ");
         }
         
         DriverManager.quitDriver();
