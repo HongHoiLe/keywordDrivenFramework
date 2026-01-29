@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Keyword Driven Test Suite" parallel="false" verbose="2">
+    
+    <listeners>
+        <listener class-name="com.automation.listeners.TestListener"/>
+    </listeners>
+    
+    <!-- Test for Keyword Driven Tests from Excel -->
+    <test name="Keyword Driven Tests">
+        <classes>
+            <class name="com.automation.tests.KeywordDrivenTest"/>
+        </classes>
+    </test>
+    
+    <!-- Test for Sample Tests -->
+    <test name="Sample Tests">
+        <classes>
+            <class name="com.automation.tests.SampleTest"/>
+        </classes>
+    </test>
+    
+</suite>
